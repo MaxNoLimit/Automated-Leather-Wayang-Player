@@ -329,18 +329,18 @@ void WayangDisplay::generalLoop()
     case StateManagement::FSA_STATE::PLAY_EPISODE_1:
         WayangDisplayLCD_in_main.playingWhatEpisodeDisplay(1);
         WayangDisplayLCD_in_main.disableLCD();
-        // Episodes::Episode_1();
-        xTaskCreate(
-            Episodes::Episode_1_task,
-            "Episode_1_task",
-            1024 * 2,
-            NULL,
-            1,
-            &episode1TaskHandler);
-        vTaskSuspend(mainLoopTaskHandler);
-        attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), WayangDisplayController::pressRotaryEncoder, RISING);
-        Serial.println(F("Back to main loop"));
-        vTaskDelay(100 / portTICK_PERIOD_MS);
+        Episodes::Episode_1();
+        // xTaskCreate(
+        //     Episodes::Episode_1_task,
+        //     "Episode_1_task",
+        //     1024 * 2,
+        //     NULL,
+        //     1,
+        //     &episode1TaskHandler);
+        // vTaskSuspend(mainLoopTaskHandler);
+        // attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), WayangDisplayController::pressRotaryEncoder, RISING);
+        // Serial.println(F("Back to main loop"));
+        // vTaskDelay(100 / portTICK_PERIOD_MS);
         WayangDisplayLCD_in_main.enableLCD();
         loop_state = StateManagement::FSA_STATE::DEFAULT_LOOPING_LCD;
         delay(1);
@@ -349,18 +349,18 @@ void WayangDisplay::generalLoop()
     case StateManagement::FSA_STATE::PLAY_EPISODE_2:
         WayangDisplayLCD_in_main.playingWhatEpisodeDisplay(2);
         WayangDisplayLCD_in_main.disableLCD();
-        // Episodes::Episode_2();
-        xTaskCreate(
-            Episodes::Episode_2_task,
-            "Episode_2_task",
-            1024 * 2,
-            NULL,
-            1,
-            &episode2TaskHandler);
-        vTaskSuspend(mainLoopTaskHandler);
-        attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), WayangDisplayController::pressRotaryEncoder, RISING);
-        Serial.println(F("Back to main loop"));
-        vTaskDelay(100 / portTICK_PERIOD_MS);
+        Episodes::Episode_2();
+        // xTaskCreate(
+        //     Episodes::Episode_2_task,
+        //     "Episode_2_task",
+        //     1024 * 2,
+        //     NULL,
+        //     1,
+        //     &episode2TaskHandler);
+        // vTaskSuspend(mainLoopTaskHandler);
+        // attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), WayangDisplayController::pressRotaryEncoder, RISING);
+        // Serial.println(F("Back to main loop"));
+        // vTaskDelay(100 / portTICK_PERIOD_MS);
         WayangDisplayLCD_in_main.enableLCD();
         loop_state = StateManagement::FSA_STATE::DEFAULT_LOOPING_LCD;
         delay(1);
@@ -369,18 +369,18 @@ void WayangDisplay::generalLoop()
     case StateManagement::FSA_STATE::PLAY_EPISODE_3:
         WayangDisplayLCD_in_main.playingWhatEpisodeDisplay(3);
         WayangDisplayLCD_in_main.disableLCD();
-        // Episodes::Episode_3();
-        xTaskCreate(
-            Episodes::Episode_3_task,
-            "Episode_3_task",
-            1024 * 2,
-            NULL,
-            1,
-            &episode3TaskHandler);
-        vTaskSuspend(mainLoopTaskHandler);
-        attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), WayangDisplayController::pressRotaryEncoder, RISING);
-        Serial.println(F("Back to main loop"));
-        vTaskDelay(100 / portTICK_PERIOD_MS);
+        Episodes::Episode_3();
+        // xTaskCreate(
+        //     Episodes::Episode_3_task,
+        //     "Episode_3_task",
+        //     1024 * 2,
+        //     NULL,
+        //     1,
+        //     &episode3TaskHandler);
+        // vTaskSuspend(mainLoopTaskHandler);
+        // attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), WayangDisplayController::pressRotaryEncoder, RISING);
+        // Serial.println(F("Back to main loop"));
+        // vTaskDelay(100 / portTICK_PERIOD_MS);
         WayangDisplayLCD_in_main.enableLCD();
         loop_state = StateManagement::FSA_STATE::DEFAULT_LOOPING_LCD;
         delay(1);
@@ -389,18 +389,18 @@ void WayangDisplay::generalLoop()
     case StateManagement::FSA_STATE::PLAY_EPISODE_4:
         WayangDisplayLCD_in_main.playingWhatEpisodeDisplay(4);
         WayangDisplayLCD_in_main.disableLCD();
-        // Episodes::Episode_4();
-        xTaskCreate(
-            Episodes::Episode_4_task,
-            "Episode_4_task",
-            1024 * 2,
-            NULL,
-            1,
-            &episode4TaskHandler);
-        vTaskSuspend(mainLoopTaskHandler);
-        attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), WayangDisplayController::pressRotaryEncoder, RISING);
-        Serial.println(F("Back to main loop"));
-        vTaskDelay(100 / portTICK_PERIOD_MS);
+        Episodes::Episode_4();
+        // xTaskCreate(
+        //     Episodes::Episode_4_task,
+        //     "Episode_4_task",
+        //     1024 * 2,
+        //     NULL,
+        //     1,
+        //     &episode4TaskHandler);
+        // vTaskSuspend(mainLoopTaskHandler);
+        // attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), WayangDisplayController::pressRotaryEncoder, RISING);
+        // Serial.println(F("Back to main loop"));
+        // vTaskDelay(100 / portTICK_PERIOD_MS);
         WayangDisplayLCD_in_main.enableLCD();
         loop_state = StateManagement::FSA_STATE::DEFAULT_LOOPING_LCD;
         delay(1);
@@ -409,18 +409,18 @@ void WayangDisplay::generalLoop()
     case StateManagement::FSA_STATE::PLAY_EPISODE_5:
         WayangDisplayLCD_in_main.playingWhatEpisodeDisplay(5);
         WayangDisplayLCD_in_main.disableLCD();
-        // Episodes::Episode_5();
-        xTaskCreate(
-            Episodes::Episode_5_task,
-            "Episode_5_task",
-            1024 * 2,
-            NULL,
-            1,
-            &episode5TaskHandler);
-        vTaskSuspend(mainLoopTaskHandler);
-        attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), WayangDisplayController::pressRotaryEncoder, RISING);
-        Serial.println(F("Back to main loop"));
-        vTaskDelay(100 / portTICK_PERIOD_MS);
+        Episodes::Episode_5();
+        // xTaskCreate(
+        //     Episodes::Episode_5_task,
+        //     "Episode_5_task",
+        //     1024 * 2,
+        //     NULL,
+        //     1,
+        //     &episode5TaskHandler);
+        // vTaskSuspend(mainLoopTaskHandler);
+        // attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), WayangDisplayController::pressRotaryEncoder, RISING);
+        // Serial.println(F("Back to main loop"));
+        // vTaskDelay(100 / portTICK_PERIOD_MS);
         WayangDisplayLCD_in_main.enableLCD();
         loop_state = StateManagement::FSA_STATE::DEFAULT_LOOPING_LCD;
         delay(1);

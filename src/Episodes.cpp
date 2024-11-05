@@ -25,11 +25,11 @@ Wibhisana wibhisana;
 // TaskHandle_t taskSugriwa;
 // TaskHandle_t taskSubali;
 
-TaskHandle_t episode1TaskHandler;
-TaskHandle_t episode2TaskHandler;
-TaskHandle_t episode3TaskHandler;
-TaskHandle_t episode4TaskHandler;
-TaskHandle_t episode5TaskHandler;
+// TaskHandle_t episode1TaskHandler;
+// TaskHandle_t episode2TaskHandler;
+// TaskHandle_t episode3TaskHandler;
+// TaskHandle_t episode4TaskHandler;
+// TaskHandle_t episode5TaskHandler;
 
 // Execution function for pameran tanggal 2 Mei 2024 di ruang MIS depan
 // void Episodes::Mei2nd_Episode()
@@ -145,7 +145,7 @@ static void subaliTaskFight1(void *pvParameters)
         subali.pointToFront();       // takes 900 ms
         // deleting subaliTaskFight1 task
         // Serial.println("subaliTaskFight1 stack: " + String(uxTaskGetStackHighWaterMark(NULL)));
-        vTaskResume(episode1TaskHandler);
+        vTaskResume(mainLoopTaskHandler);
         vTaskDelete(NULL);
     }
 }
@@ -176,7 +176,7 @@ static void ramaTaskFight1(void *pvParameters)
         rama_wijaya.pointToFront();       // takes 700 ms
         // deleting ramaTaskFight1 task
         // Serial.println("ramaTaskFight1 stack: " + String(uxTaskGetStackHighWaterMark(NULL)));
-        vTaskResume(episode1TaskHandler);
+        vTaskResume(mainLoopTaskHandler);
         vTaskDelete(NULL);
     }
 }
@@ -1853,7 +1853,7 @@ void Episodes::Episode_2()
 
     // vTaskStartScheduler();
 
-    vTaskSuspend(episode2TaskHandler);
+    vTaskSuspend(mainLoopTaskHandler);
     // sugriwa.pointToFront();       // takes 900 ms
     // subali.pointToFront();        // takes 900 ms
     // sugriwa.lower_pointToFront(); // takes 700 ms
@@ -2088,7 +2088,7 @@ void Episodes::Episode_2()
     xTaskCreate(sugriwaTaskFight1, "sugriwaTaskFight1", fighting_STACK_SIZE, NULL, 1, NULL);
     xTaskCreate(subaliTaskFight1, "subaliTaskFight1", fighting_STACK_SIZE, NULL, 1, NULL);
 
-    vTaskSuspend(episode2TaskHandler);
+    vTaskSuspend(mainLoopTaskHandler);
 
     // sugriwa.pointToFront();       // takes 900 ms
     // subali.pointToFront();        // takes 900 ms
@@ -2112,7 +2112,7 @@ void Episodes::Episode_2()
     xTaskCreate(subaliTaskFight2, "subaliTaskFight2", fighting_STACK_SIZE, NULL, 1, NULL);
     xTaskCreate(ramaTaskFight1, "ramaTaskFight1", fighting_STACK_SIZE, NULL, 1, NULL);
 
-    vTaskSuspend(episode2TaskHandler);
+    vTaskSuspend(mainLoopTaskHandler);
     // rama_wijaya.pointToFront();       // takes 900 ms
     // subali.pointToFront();            // takes 900 ms
     // rama_wijaya.lower_pointToFront(); // takes 700 ms
@@ -4962,110 +4962,110 @@ void Episodes::Episode_5()
 {
 }
 
-void Episodes::Episode_1_task(void *pvParameters)
-{
-    attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), Episodes::forceQuit, RISING);
-    currentEpisode = 1;
-    Serial.print(F("Current Episode: "));
-    Serial.println(currentEpisode);
-    while (1)
-    {
-        Episode_1();
-        vTaskResume(mainLoopTaskHandler);
-        vTaskDelete(NULL);
-    }
-}
+// void Episodes::Episode_1_task(void *pvParameters)
+// {
+//     attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), Episodes::forceQuit, RISING);
+//     currentEpisode = 1;
+//     Serial.print(F("Current Episode: "));
+//     Serial.println(currentEpisode);
+//     while (1)
+//     {
+//         Episode_1();
+//         vTaskResume(mainLoopTaskHandler);
+//         vTaskDelete(NULL);
+//     }
+// }
 
-void Episodes::Episode_2_task(void *pvParameters)
-{
-    attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), Episodes::forceQuit, RISING);
-    currentEpisode = 2;
-    Serial.print(F("Current Episode: "));
-    Serial.println(currentEpisode);
-    while (1)
-    {
-        Episode_2();
-        vTaskResume(mainLoopTaskHandler);
-        vTaskDelete(NULL);
-    }
-}
+// void Episodes::Episode_2_task(void *pvParameters)
+// {
+//     attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), Episodes::forceQuit, RISING);
+//     currentEpisode = 2;
+//     Serial.print(F("Current Episode: "));
+//     Serial.println(currentEpisode);
+//     while (1)
+//     {
+//         Episode_2();
+//         vTaskResume(mainLoopTaskHandler);
+//         vTaskDelete(NULL);
+//     }
+// }
 
-void Episodes::Episode_3_task(void *pvParameters)
-{
-    attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), Episodes::forceQuit, RISING);
-    currentEpisode = 3;
-    Serial.print(F("Current Episode: "));
-    Serial.println(currentEpisode);
-    while (1)
-    {
-        Episode_3();
-        vTaskResume(mainLoopTaskHandler);
-        vTaskDelete(NULL);
-    }
-}
+// void Episodes::Episode_3_task(void *pvParameters)
+// {
+//     attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), Episodes::forceQuit, RISING);
+//     currentEpisode = 3;
+//     Serial.print(F("Current Episode: "));
+//     Serial.println(currentEpisode);
+//     while (1)
+//     {
+//         Episode_3();
+//         vTaskResume(mainLoopTaskHandler);
+//         vTaskDelete(NULL);
+//     }
+// }
 
-void Episodes::Episode_4_task(void *pvParameters)
-{
-    attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), Episodes::forceQuit, RISING);
-    currentEpisode = 4;
-    Serial.print(F("Current Episode: "));
-    Serial.println(currentEpisode);
-    while (1)
-    {
-        Episode_4();
-        vTaskResume(mainLoopTaskHandler);
-        vTaskDelete(NULL);
-    }
-}
+// void Episodes::Episode_4_task(void *pvParameters)
+// {
+//     attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), Episodes::forceQuit, RISING);
+//     currentEpisode = 4;
+//     Serial.print(F("Current Episode: "));
+//     Serial.println(currentEpisode);
+//     while (1)
+//     {
+//         Episode_4();
+//         vTaskResume(mainLoopTaskHandler);
+//         vTaskDelete(NULL);
+//     }
+// }
 
-void Episodes::Episode_5_task(void *pvParameters)
-{
-    attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), Episodes::forceQuit, RISING);
-    currentEpisode = 5;
-    Serial.print(F("Current Episode: "));
-    Serial.println(currentEpisode);
-    while (1)
-    {
-        Episode_5();
-        vTaskResume(mainLoopTaskHandler);
-        vTaskDelete(NULL);
-    }
-}
+// void Episodes::Episode_5_task(void *pvParameters)
+// {
+//     attachInterrupt(digitalPinToInterrupt(BUTTON_ROTARY), Episodes::forceQuit, RISING);
+//     currentEpisode = 5;
+//     Serial.print(F("Current Episode: "));
+//     Serial.println(currentEpisode);
+//     while (1)
+//     {
+//         Episode_5();
+//         vTaskResume(mainLoopTaskHandler);
+//         vTaskDelete(NULL);
+//     }
+// }
 
-void Episodes::forceQuit()
-{
-    Serial.print(F("Force Quit Episode "));
-    Serial.println(currentEpisode);
-    SoundSystem::pause();
-    switch (currentEpisode)
-    {
-    case 1:
-        vTaskResume(mainLoopTaskHandler);
-        vTaskDelete(episode1TaskHandler);
-        break;
+// void Episodes::forceQuit()
+// {
+//     Serial.print(F("Force Quit Episode "));
+//     Serial.println(currentEpisode);
+//     SoundSystem::pause();
+//     switch (currentEpisode)
+//     {
+//     case 1:
+//         vTaskResume(mainLoopTaskHandler);
+//         vTaskDelete(episode1TaskHandler);
+//         break;
 
-    case 2:
+//     case 2:
 
-        vTaskResume(mainLoopTaskHandler);
-        vTaskDelete(episode2TaskHandler);
-        break;
+//         vTaskResume(mainLoopTaskHandler);
+//         vTaskDelete(episode2TaskHandler);
+//         break;
 
-    case 3:
-        vTaskResume(mainLoopTaskHandler);
-        vTaskDelete(episode3TaskHandler);
-        break;
+//     case 3:
+//         vTaskResume(mainLoopTaskHandler);
+//         vTaskDelete(episode3TaskHandler);
+//         break;
 
-    case 4:
-        vTaskResume(mainLoopTaskHandler);
-        vTaskDelete(episode4TaskHandler);
-        break;
+//     case 4:
+//         vTaskResume(mainLoopTaskHandler);
+//         vTaskDelete(episode4TaskHandler);
+//         break;
 
-    case 5:
-        vTaskResume(mainLoopTaskHandler);
-        vTaskDelete(episode5TaskHandler);
-        break;
+//     case 5:
+//         vTaskResume(mainLoopTaskHandler);
+//         vTaskDelete(episode5TaskHandler);
+//         break;
 
-    default:
-        break;
-    }
-}
+//     default:
+//         break;
+//     }
+// }
