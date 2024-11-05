@@ -115,6 +115,48 @@ namespace SoundSystem
 
 
     };
+
+    enum EPISODE_3_DIALOG{
+        // 001_Sita-Rahwana-Hanuman_Rawana1
+        SITA_RAHWANA_HANUMAN_RAHWANA1 = 1,
+        // 002_Sita-Rahwana-Hanuman_Rawana2
+        SITA_RAHWANA_HANUMAN_RAHWANA2 = 2,
+        // 003_Sita-Rahwana-Hanuman_Sita1
+        SITA_RAHWANA_HANUMAN_SITA1 = 3,
+        // 004_Sita-Rahwana-Hanuman_Rawana3
+        SITA_RAHWANA_HANUMAN_RAHWANA3 = 4,
+        // 005_Sita-Rahwana-Hanuman_Sita2
+        SITA_RAHWANA_HANUMAN_SITA2 = 5,
+        // 006_Sita-Rahwana-Hanuman_Hanuman1
+        SITA_RAHWANA_HANUMAN_HANUMAN1 = 6,
+        // 007_Sita-Rahwana-Hanuman_Sita3
+        SITA_RAHWANA_HANUMAN_SITA3 = 7,
+        // 008_Sita-Rahwana-Hanuman_Hanuman2
+        SITA_RAHWANA_HANUMAN_HANUMAN2 = 8,
+        // 009_Sita-Rahwana-Hanuman_Hanuman3
+        SITA_RAHWANA_HANUMAN_HANUMAN3 = 9,
+        // 010_Hanuman-Rahwana-Wibhisana_HanumanEnter
+        HANUMAN_RAHWANA_WIBHISANA_HANUMANENTER = 10,
+        // 011_Hanuman-Rahwana-Wibhisana_Rahwana1
+        HANUMAN_RAHWANA_WIBHISANA_RAHWANA1 = 11,
+        // 012_Hanuman-Rahwana-Wibhisana_Wibhisana1
+        HANUMAN_RAHWANA_WIBHISANA_WIBHISANA1 = 12,
+        // 013_Hanuman-Rahwana-Wibhisana_Rahwana2
+        HANUMAN_RAHWANA_WIBHISANA_RAHWANA2 = 13,
+        // 014_Hanuman-Rahwana-Wibhisana_Hanuman1
+        HANUMAN_RAHWANA_WIBHISANA_HANUMAN1 = 14,
+        // 015_Hanuman-Rahwana-Wibhisana_Rahwana3
+        HANUMAN_RAHWANA_WIBHISANA_RAHWANA3 = 15,
+        // 016_Hanuman-Rahwana-Wibhisana_Hanuman2
+        HANUMAN_RAHWANA_WIBHISANA_HANUMAN2 = 16,
+        // 017_Hanuman-Rahwana-Wibhisana_Rahwana4
+        HANUMAN_RAHWANA_WIBHISANA_RAHWANA4 = 17,
+        // 018_Hanuman-Rahwana-Wibhisana_HanumanRoar
+        HANUMAN_RAHWANA_WIBHISANA_HANUMANROAR = 18,
+        // 019_Hanuman-Rahwana-Wibhisana_Rahwana5
+        HANUMAN_RAHWANA_WIBHISANA_RAHWANA5 = 19,
+        
+    };
     
     enum DIALOG_NUMBER
     {

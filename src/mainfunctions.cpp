@@ -1517,17 +1517,17 @@ void WayangDisplayController::pressRotaryEncoder()
                 break;
 
             case 3:
-                // Play Episode 3
+                loop_state = StateManagement::FSA_STATE::PLAY_EPISODE_3;
                 // do nothing
                 break;
 
             case 4:
-                // Play Episode 4
+                // loop_state = StateManagement::FSA_STATE::PLAY_EPISODE_4;
                 // do nothing
                 break;
 
             case 5:
-                // Play Episode 5
+                // loop_state = StateManagement::FSA_STATE::PLAY_EPISODE_5;
                 // do nothing
                 break;
             }

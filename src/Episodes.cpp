@@ -1645,147 +1645,147 @@ void Episodes::Episode_1()
 
 void Episodes::Episode_2()
 {
-    // CalibratingFunction::wayangHand();
+    CalibratingFunction::wayangHand();
 
     setAllMOSFETtoLOW();
 
-    // SoundSystem::playMusicWayang();
+    SoundSystem::playMusicWayang();
 
-    // delay(1000);
-    // sugriwa.walk_to_a_certain_distance_before_calibrating_value(250);
-    // rama_wijaya.walk_to_a_certain_distance_before_calibrating_value(135);
+    delay(1000);
+    sugriwa.walk_to_a_certain_distance_before_calibrating_value(250);
+    rama_wijaya.walk_to_a_certain_distance_before_calibrating_value(135);
 
-    // // 013 (06 S-R1 Sugriwa1F)
-    // SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_1, SoundSystem::EPISODE_1_DIALOG::S_R1_SUGRIWA1F);
-    // // delay(3000);
+    // 013 (06 S-R1 Sugriwa1F)
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_1, SoundSystem::EPISODE_1_DIALOG::S_R1_SUGRIWA1F);
+    // delay(3000);
 
-    // /*O, Raghawa!*/
-    // sugriwa.middleFront(); // 1200
-    // delay(1861 - 1200);
+    /*O, Raghawa!*/
+    sugriwa.middleFront(); // 1200
+    delay(1861 - 1200);
 
-    // /*The monkey king Bali is extremely powerful. */
-    // sugriwa.pointToFront(); // 900
-    // delay(5146 - 1861 - 900);
+    /*The monkey king Bali is extremely powerful. */
+    sugriwa.pointToFront(); // 900
+    delay(5146 - 1861 - 900);
 
-    // /*There is no match for him in this threefold world.*/
-    // sugriwa.middleFront();             // 1200
-    // sugriwa.directControl(2, 80, 400); // 400
-    // sugriwa.directControl(2, 60, 400); // 400
-    // sugriwa.directControl(2, 80, 400); // 400
-    // sugriwa.directControl(2, 60, 400); // 400
-    // delay(9927 - 5146 - 1200 - 1600);
+    /*There is no match for him in this threefold world.*/
+    sugriwa.middleFront();             // 1200
+    sugriwa.directControl(2, 80, 400); // 400
+    sugriwa.directControl(2, 60, 400); // 400
+    sugriwa.directControl(2, 80, 400); // 400
+    sugriwa.directControl(2, 60, 400); // 400
+    delay(9927 - 5146 - 1200 - 1600);
 
-    // /*It is not out of disdain that I talk to you like this, my lord,*/
-    // sugriwa.lower_pointToFront();       // 700
-    // sugriwa.directControl(1, 110, 400); // 400
-    // sugriwa.directControl(1, 90, 400);  // 400
-    // delay(12117 - 9927 - 700 - 800);
-    // sugriwa.downFront(); // 700
-    // delay(14600 - 12117 - 700);
+    /*It is not out of disdain that I talk to you like this, my lord,*/
+    sugriwa.lower_pointToFront();       // 700
+    sugriwa.directControl(1, 110, 400); // 400
+    sugriwa.directControl(1, 90, 400);  // 400
+    delay(12117 - 9927 - 700 - 800);
+    sugriwa.downFront(); // 700
+    delay(14600 - 12117 - 700);
 
-    // /*but it is because of out friendship*/
-    // sugriwa.pointToFront(); // 900
-    // delay(16806 - 14600 - 900 - 700);
-    // sugriwa.downFront(); // 700
+    /*but it is because of out friendship*/
+    sugriwa.pointToFront(); // 900
+    delay(16806 - 14600 - 900 - 700);
+    sugriwa.downFront(); // 700
 
-    // /* that I wish to explain the matter.*/
-    // sugriwa.pointToSelf(); // 900
-    // delay(19982 - 16806 - 900 - 500);
+    /* that I wish to explain the matter.*/
+    sugriwa.pointToSelf(); // 900
+    delay(19982 - 16806 - 900 - 500);
 
-    // /*Although Bali is famed for his power, */
-    // sugriwa.pointToBack(); // 1400
-    // sugriwa.downFront();   // 700
-    // delay(23332 - 19982 - 1400 - 700 + 500);
+    /*Although Bali is famed for his power, */
+    sugriwa.pointToBack(); // 1400
+    sugriwa.downFront();   // 700
+    delay(23332 - 19982 - 1400 - 700 + 500);
 
-    // /*he will certainly be killed by your irresistible arrows.*/
-    // sugriwa.pointToFront(); // 900
-    // sugriwa.downBack();     // 700
-    // sugriwa.onHipBack();    // 900
-    // delay(27727 - 23332 - 900 - 700 - 900);
+    /*he will certainly be killed by your irresistible arrows.*/
+    sugriwa.pointToFront(); // 900
+    sugriwa.downBack();     // 700
+    sugriwa.onHipBack();    // 900
+    delay(27727 - 23332 - 900 - 700 - 900);
 
-    // /*Well!*/
-    // sugriwa.downFront(); // 700
-    // delay(28800 - 27727 - 700);
+    /*Well!*/
+    sugriwa.downFront(); // 700
+    delay(28800 - 27727 - 700);
 
-    // /*This is the story of how he obtained that extraordinary power in the world.*/
-    // sugriwa.middleFront(); // 1200
-    // delay(34590 - 28800 - 1200);
+    /*This is the story of how he obtained that extraordinary power in the world.*/
+    sugriwa.middleFront(); // 1200
+    delay(34590 - 28800 - 1200);
 
-    // /*It was a boon from a compassionate monk. */
-    // sugriwa.pointToBack(); // 1400
-    // delay(37961 - 34590 - 1400 - 500);
+    /*It was a boon from a compassionate monk. */
+    sugriwa.pointToBack(); // 1400
+    delay(37961 - 34590 - 1400 - 500);
 
-    // /*He became more and more powerful */
-    // sugriwa.middleFront(); // 1400
-    // sugriwa.downBack();    // 700
-    // sugriwa.onHipBack();   // 900
-    // delay(40852 - 37961 - 1400 - 700 - 900 + 500);
+    /*He became more and more powerful */
+    sugriwa.middleFront(); // 1400
+    sugriwa.downBack();    // 700
+    sugriwa.onHipBack();   // 900
+    delay(40852 - 37961 - 1400 - 700 - 900 + 500);
 
-    // /*and finally irresistible.*/
-    // sugriwa.lower_pointToFront(); // 700
-    // delay(43472 - 40852 - 700);
+    /*and finally irresistible.*/
+    sugriwa.lower_pointToFront(); // 700
+    delay(43472 - 40852 - 700);
 
-    // /*He is equal to the Sun,*/
-    // sugriwa.pointToFront(); // 900
-    // delay(45762 - 43472 - 900);
+    /*He is equal to the Sun,*/
+    sugriwa.pointToFront(); // 900
+    delay(45762 - 43472 - 900);
 
-    // /*whilst his opponents are Darkness. */
-    // sugriwa.lower_pointToFront();       // 700
-    // sugriwa.directControl(1, 110, 400); // 400
-    // sugriwa.directControl(1, 90, 400);  // 400
-    // sugriwa.directControl(1, 110, 400); // 400
-    // sugriwa.directControl(1, 90, 400);  // 400
-    // delay(49326 - 45762 - 700 - 1600 - 700);
-    // sugriwa.downFront(); // 700
+    /*whilst his opponents are Darkness. */
+    sugriwa.lower_pointToFront();       // 700
+    sugriwa.directControl(1, 110, 400); // 400
+    sugriwa.directControl(1, 90, 400);  // 400
+    sugriwa.directControl(1, 110, 400); // 400
+    sugriwa.directControl(1, 90, 400);  // 400
+    delay(49326 - 45762 - 700 - 1600 - 700);
+    sugriwa.downFront(); // 700
 
-    // /*I am sad and afraid to see his power. */
-    // sugriwa.pointToSelf(); // 900
-    // delay(53635 - 49326 - 900);
+    /*I am sad and afraid to see his power. */
+    sugriwa.pointToSelf(); // 900
+    delay(53635 - 49326 - 900);
 
-    // /*Formerly I had no idea that he could ever be killed.*/
-    // sugriwa.downBack();   // 700
-    // sugriwa.middleBack(); // 1400
-    // delay(58244 - 53635 - 700 - 1400 - 700);
-    // sugriwa.downFront();
+    /*Formerly I had no idea that he could ever be killed.*/
+    sugriwa.downBack();   // 700
+    sugriwa.middleBack(); // 1400
+    delay(58244 - 53635 - 700 - 1400 - 700);
+    sugriwa.downFront();
 
-    // /*But now you, my lord, have come.*/
-    // sugriwa.middleFront(); // 1200
-    // sugriwa.downBack();    // 700
-    // sugriwa.onHipBack();   // 900
-    // delay(61669 - 58244 - 1200 - 700 - 900);
+    /*But now you, my lord, have come.*/
+    sugriwa.middleFront(); // 1200
+    sugriwa.downBack();    // 700
+    sugriwa.onHipBack();   // 900
+    delay(61669 - 58244 - 1200 - 700 - 900);
 
-    // /*You are unsurpassingly powerful,*/
-    // sugriwa.pointToFront();            // 900
-    // sugriwa.directControl(1, 20, 400); // 400
-    // sugriwa.directControl(1, 0, 400);  // 400
-    // sugriwa.directControl(1, 20, 400); // 400
-    // sugriwa.directControl(1, 0, 400);  // 400
-    // delay(64601 - 61669 - 900 - 1600);
+    /*You are unsurpassingly powerful,*/
+    sugriwa.pointToFront();            // 900
+    sugriwa.directControl(1, 20, 400); // 400
+    sugriwa.directControl(1, 0, 400);  // 400
+    sugriwa.directControl(1, 20, 400); // 400
+    sugriwa.directControl(1, 0, 400);  // 400
+    delay(64601 - 61669 - 900 - 1600);
 
-    // /*and I think,*/
-    // sugriwa.lower_pointToFront(); // 700
-    // delay(65888 - 64601 - 700);
+    /*and I think,*/
+    sugriwa.lower_pointToFront(); // 700
+    delay(65888 - 64601 - 700);
 
-    // /*he will be killed by you. */
-    // sugriwa.pointToFront();            // 900
-    // sugriwa.directControl(1, 20, 400); // 400
-    // sugriwa.directControl(1, 0, 400);  // 400
-    // delay(68221 - 65888 - 900 - 800);
+    /*he will be killed by you. */
+    sugriwa.pointToFront();            // 900
+    sugriwa.directControl(1, 20, 400); // 400
+    sugriwa.directControl(1, 0, 400);  // 400
+    delay(68221 - 65888 - 900 - 800);
 
-    // /*I think we should go immediately to Kiskindha, */
-    // sugriwa.downFront();   // 700
-    // sugriwa.pointToSelf(); // 900
-    // delay(72351 - 68221 - 700 - 900 - (700));
+    /*I think we should go immediately to Kiskindha, */
+    sugriwa.downFront();   // 700
+    sugriwa.pointToSelf(); // 900
+    delay(72351 - 68221 - 700 - 900 - (700));
 
-    // /* I will challenge him */
-    // sugriwa.pointToBack(); // 1400
-    // delay(73660 - 72351 - 700 - (600));
-    // sugriwa.downBack();
+    /* I will challenge him */
+    sugriwa.pointToBack(); // 1400
+    delay(73660 - 72351 - 700 - (600));
+    sugriwa.downBack();
 
     /*and you will shoot him whilst we duel.*/
-    // sugriwa.downFront();    // 700
-    // sugriwa.pointToFront(); // 900
-    // delay(75908 - 73660 - 700 - 900 - (100));
+    sugriwa.downFront();    // 700
+    sugriwa.pointToFront(); // 900
+    delay(75908 - 73660 - 700 - 900 - (100));
 
     // /*return to default position*/
     sugriwa.defaultHandPosition();
@@ -3293,10 +3293,11 @@ void Episodes::Episode_3()
     SoundSystem::playMusicWayang();
 
     delay(1000);
-    rahwana.walk_to_a_certain_distance_before_calibrating_value(350); // going to the dialog position
-    sita.walk_to_a_certain_distance_before_calibrating_value(100);    // going to the dialog position
+    rahwana.walk_to_a_certain_distance_before_calibrating_value(250); // going to the dialog position
+    sita.walk_to_a_certain_distance_before_calibrating_value(150);    // going to the dialog position
 
     /*001_Sita-Rawana-Hanuman_Rawana1v here*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::SITA_RAHWANA_HANUMAN_RAHWANA1);
 
     delay(821);
     // (821) Hey Maithili, (1930)
@@ -3357,6 +3358,7 @@ void Episodes::Episode_3()
     delay(5000);
 
     /*002_Sita-Rawana-Hanuman_Rawana2v here*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::SITA_RAHWANA_HANUMAN_RAHWANA2);
 
     delay(516);
     // (516) Janakatmaja! (1649)
@@ -3534,6 +3536,7 @@ void Episodes::Episode_3()
     rahwana.downFront(); // takes 700 ms
 
     /*003_Sita-Rahwana-Hanuman_Sita1 here*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::SITA_RAHWANA_HANUMAN_SITA1);
 
     delay(118);
     // (118) Wicked ten headed and debased Rawana. (2377)
@@ -3662,6 +3665,7 @@ void Episodes::Episode_3()
     sita.downFront(); // takes 700 ms
 
     /*004_Sita-Rawana-Hanuman_Rawana3v here*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::SITA_RAHWANA_HANUMAN_RAHWANA3);
     delay(370);
     // (370) Janakatmaja, (1518)
     rahwana.middleFront(); // takes 1200 ms
@@ -3691,6 +3695,7 @@ void Episodes::Episode_3()
     rahwana.defaultStandPosition();
 
     /*005_Sita-Rahwana-Hanuman_Sita2*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::SITA_RAHWANA_HANUMAN_SITA2);
 
     delay(62);
     // (62) Ah, I am in deep sorrow (1743)
@@ -3770,8 +3775,9 @@ void Episodes::Episode_3()
     sita.downFront(); // takes 700 ms
 
     /*006_Sita-Rawana-Hanuman_Hanuman1*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::SITA_RAHWANA_HANUMAN_HANUMAN1);
 
-    hanoman.walk_to_a_certain_distance_before_calibrating_value(160);
+    hanoman.walk_to_a_certain_distance_before_calibrating_value(200);
     // play audio here
 
     delay(1198);
@@ -3978,6 +3984,7 @@ void Episodes::Episode_3()
     delay(2000);
 
     /*007_Sita-Rahwana-Hanuman_Sita3*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::SITA_RAHWANA_HANUMAN_SITA3);
 
     delay(194);
     // (194) Hey Pawanatmaja, step forward! (2280)
@@ -4035,6 +4042,7 @@ void Episodes::Episode_3()
     sita.downFront(); // takes 700 ms
 
     /*008_Sita-Rawana-Hanuman_Hanuman2*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::SITA_RAHWANA_HANUMAN_HANUMAN2);
 
     delay(508);
     // (508) But of course, (1412)
@@ -4056,6 +4064,7 @@ void Episodes::Episode_3()
     // *Sita leaves from scene*
 
     /*008p5_Sita-Rawana-Hanuman_Hanuman3*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::SITA_RAHWANA_HANUMAN_HANUMAN3);
 
     delay(481);
     // (481) *roar* (1892) fight me ye demons!! (4209)
@@ -4074,6 +4083,7 @@ void Episodes::Episode_3()
     // (555) Agh! (933)
 
     /*010_Hanuman-Rawana-Wibhisana_Rawana1v*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::HANUMAN_RAHWANA_WIBHISANA_RAHWANA1);
     // Rawana distance is further than Hanoman (in front of Hanoman)
 
     delay(188);
@@ -4109,6 +4119,7 @@ void Episodes::Episode_3()
     rahwana.downFront(); // takes 700 ms
 
     /*011_Hanuman-Rawana-Wibhisana_Wibhisana1*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::HANUMAN_RAHWANA_WIBHISANA_WIBHISANA1);
 
     // *enters* (hanuman moves to just barely in the frame, since the main focus is on Wibhisana and Rawana)
     // *adjust positions*
@@ -4136,6 +4147,7 @@ void Episodes::Episode_3()
     wibhisana.downFront(); // takes 700 ms
 
     /*012_Hanuman-Rawana-Wibhisana_Rawana2v*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::HANUMAN_RAHWANA_WIBHISANA_RAHWANA2);
 
     delay(1667);
     // (1667) *angrier* Why should he escape punishment? (3459)
@@ -4199,6 +4211,7 @@ void Episodes::Episode_3()
     rahwana.downFront(); // takes 700 ms
 
     /*013_Hanuman-Rawana-Wibhisana_Hanuman1*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::HANUMAN_RAHWANA_WIBHISANA_HANUMAN1);
 
     delay(336);
     // (336) O king of the demons, (2112)
@@ -4359,6 +4372,7 @@ void Episodes::Episode_3()
     hanoman.downFront(); // takes 700 ms
 
     /*014_Hanuman-Rawana-Wibhisana_Rawana3v*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::HANUMAN_RAHWANA_WIBHISANA_RAHWANA3);
 
     // *angrier*
     delay(142);
@@ -4637,6 +4651,7 @@ void Episodes::Episode_3()
     rahwana.downFront(); // takes 700 ms
 
     /*015_Hanuman-Rawana-Wibhisana_Hanuman2*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::HANUMAN_RAHWANA_WIBHISANA_HANUMAN2);
 
     delay(579);
     // (579) Why do you blame me for ransacking the trees in the pleasure garden. (4081)
@@ -4886,6 +4901,7 @@ void Episodes::Episode_3()
     hanoman.downFront(); // takes 700 ms
 
     /*016_Hanuman-Rawana-Wibhisana_Rawana4v*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::HANUMAN_RAHWANA_WIBHISANA_RAHWANA4);
 
     delay(262);
     // (662) Hell! (1159)
@@ -4926,6 +4942,7 @@ void Episodes::Episode_3()
     rahwana.downFront(); // takes 700 ms
 
     /*017_Hanuman-Rawana-Wibhisana_HanumanRoar*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::HANUMAN_RAHWANA_WIBHISANA_HANUMANROAR);
 
     // g ad delay, main lgsg
     // (318) *roar* (1665)
@@ -4935,6 +4952,7 @@ void Episodes::Episode_3()
     hanoman.defaultStandPosition();
 
     /*018_Hanuman-Rawana-Wibhisana_Rawana5v*/
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::HANUMAN_RAHWANA_WIBHISANA_RAHWANA5);
 
     // no delay, just move servo immediately
     // (560) What?! (946)
