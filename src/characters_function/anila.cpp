@@ -40,24 +40,24 @@ void Anila::walk_to_a_certain_distance(int desiredDistance)
         readValue = 800;
     }
 
-    Serial.println("readValue 1: ");
+    Serial.println(F("readValue 1: "));
     Serial.print(readValue);
-    Serial.println("mm \n");
+    Serial.println(F("mm \n"));
     float difference = readValue - desiredDistance;
     Serial.print(difference);
-    Serial.println("mm \n");
+    Serial.println(F("mm \n"));
     if (difference > 0)
     {
         // difference = difference + 10;
         float result = difference / 0.3;
         int result_int = (int)result + 1;
         Serial.print(result_int);
-        Serial.println(" steps\n");
+        Serial.println(F(" steps\n"));
         leave_from_scene(result_int);
-        Serial.println("readValue 2: ");
+        Serial.println(F("readValue 2: "));
         int finalReadValue = getDistanceSensorNum(10);;
         Serial.print(finalReadValue);
-        Serial.println("mm \n");
+        Serial.println(F("mm \n"));
         if (finalReadValue > desiredDistance * 1.1)
         {
             walk_to_a_certain_distance(desiredDistance);
@@ -69,13 +69,13 @@ void Anila::walk_to_a_certain_distance(int desiredDistance)
         float result = difference / 0.3;
         int result_int = (int)result - 1;
         Serial.print(result_int);
-        Serial.println(" steps\n");
+        Serial.println(F(" steps\n"));
         result_int = abs(result_int);
         walk_to_scene(result_int);
-        Serial.println("readValue 2: ");
+        Serial.println(F("readValue 2: "));
         int finalReadValue = getDistanceSensorNum(10);;
         Serial.print(finalReadValue);
-        Serial.println("mm \n");
+        Serial.println(F("mm \n"));
         if (finalReadValue < desiredDistance * 0.9)
         {
             walk_to_a_certain_distance(desiredDistance);
@@ -86,9 +86,9 @@ void Anila::walk_to_a_certain_distance(int desiredDistance)
 void Anila::walk_to_a_certain_distance_before_calibrating_value(int desiredDistance)
 {
     int desiredDistanceAfterCalibratingValue = desiredDistance + 63;
-    Serial.println("\ndesiredDistance: ");
+    Serial.println(F("\ndesiredDistance: "));
     Serial.print(desiredDistanceAfterCalibratingValue);
-    Serial.println("mm \n");
+    Serial.println(F("mm \n"));
     walk_to_a_certain_distance(desiredDistanceAfterCalibratingValue);
 }
 

@@ -126,7 +126,7 @@ void WayangDisplay::WayangDisplayLCD::MenuDisplay()
         lcdWayang.print(menuList[i]);
     }
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 /*
@@ -147,7 +147,7 @@ void WayangDisplay::WayangDisplayLCD::EpisodeDisplay()
         }
     }
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 /*
@@ -168,7 +168,7 @@ void WayangDisplay::WayangDisplayLCD::CalibrateDisplay()
         }
     }
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 /*
@@ -189,7 +189,7 @@ void WayangDisplay::WayangDisplayLCD::VSlotDataFarmDisplay()
         }
     }
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 void WayangDisplay::WayangDisplayLCD::SensorStatusDisplay()
@@ -208,7 +208,7 @@ void WayangDisplay::WayangDisplayLCD::SensorStatusDisplay()
     }
 
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 void WayangDisplay::WayangDisplayLCD::WayangHandCalibrationDisplay()
@@ -226,7 +226,7 @@ void WayangDisplay::WayangDisplayLCD::WayangHandCalibrationDisplay()
         }
     }
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 /*
@@ -235,13 +235,13 @@ Function untuk display bagian Settings
 void WayangDisplay::WayangDisplayLCD::SettingsDisplay()
 {
     lcdWayang.setCursor(0, 0);
-    lcdWayang.print("Settings");
+    lcdWayang.print(F("Settings"));
     lcdWayang.setCursor(0, 1);
-    lcdWayang.print("Volume:");
+    lcdWayang.print(F("Volume:"));
     lcdWayang.setCursor(8, 1);
-    lcdWayang.print("30");
+    lcdWayang.print(volumeHardcoded);
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 /*
@@ -281,7 +281,7 @@ void WayangDisplay::WayangDisplayLCD::SitaHandCalibration()
         }
     }
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 void WayangDisplay::WayangDisplayLCD::RahwanaHandCalibration()
@@ -299,7 +299,7 @@ void WayangDisplay::WayangDisplayLCD::RahwanaHandCalibration()
         }
     }
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 void WayangDisplay::WayangDisplayLCD::RamaWijayaHandCalibration()
@@ -317,7 +317,7 @@ void WayangDisplay::WayangDisplayLCD::RamaWijayaHandCalibration()
         }
     }
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 void WayangDisplay::WayangDisplayLCD::HanomanHandCalibration()
@@ -335,7 +335,7 @@ void WayangDisplay::WayangDisplayLCD::HanomanHandCalibration()
         }
     }
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 void WayangDisplay::WayangDisplayLCD::LaksmanaHandCalibration()
@@ -353,7 +353,7 @@ void WayangDisplay::WayangDisplayLCD::LaksmanaHandCalibration()
         }
     }
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 void WayangDisplay::WayangDisplayLCD::SugriwaHandCalibration()
@@ -371,7 +371,7 @@ void WayangDisplay::WayangDisplayLCD::SugriwaHandCalibration()
         }
     }
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 void WayangDisplay::WayangDisplayLCD::SubaliHandCalibration()
@@ -389,7 +389,7 @@ void WayangDisplay::WayangDisplayLCD::SubaliHandCalibration()
         }
     }
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 void WayangDisplay::WayangDisplayLCD::WibhisanaHandCalibration()
@@ -407,7 +407,7 @@ void WayangDisplay::WayangDisplayLCD::WibhisanaHandCalibration()
         }
     }
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 void WayangDisplay::WayangDisplayLCD::AnggadaHandCalibration()
@@ -425,7 +425,7 @@ void WayangDisplay::WayangDisplayLCD::AnggadaHandCalibration()
         }
     }
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 void WayangDisplay::WayangDisplayLCD::AnilaHandCalibration()
@@ -443,7 +443,7 @@ void WayangDisplay::WayangDisplayLCD::AnilaHandCalibration()
         }
     }
     lcdWayang.setCursor(18, get_selection_point());
-    lcdWayang.print("<<");
+    lcdWayang.print(F("<<"));
 }
 
 // Function untuk mendapat address LCD 20x4

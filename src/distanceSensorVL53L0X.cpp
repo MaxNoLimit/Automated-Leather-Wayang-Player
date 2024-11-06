@@ -15,24 +15,6 @@ const int xshut_pis[10] = {
     XSHUT_9,
     XSHUT_10};
 
-// void beginAllinOneSensor()
-// {
-//     Serial.println("\nBegining all in one sensor");
-//     setAllMOSFETtoHIGH();
-//     delay(50);
-//     distanceSensorAllInOne.setTimeout(500);
-//     if (!distanceSensorAllInOne.init())
-//     {
-//         Serial.println("Failed to boot VL53L0X Sensor All in One");
-//         // setAllMOSFETtoLOW();
-//     }
-//     else
-//     {
-//         Serial.println("VL53L0X Sensor All in One booted");
-//         // setAllMOSFETtoLOW();
-//     }
-// }
-
 void beginSensorNum(int nSensor)
 {
     Serial.print(F("\nBegining sensor "));
