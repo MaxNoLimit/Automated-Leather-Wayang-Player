@@ -428,6 +428,7 @@ void WayangDisplay::generalLoop()
 
     case StateManagement::FSA_STATE::SIMPLE_WAYANG_HAND_CALIBRATION:
         setAllMOSFETtoHIGH();
+        WayangDisplayLCD_in_main.pleaseWaitDisplay();
         CalibratingFunction::wayangHand();
         SoundSystem::playDialogFromACertainFolder(SoundSystem::INDICATOR_SOUND, SoundSystem::INDICATOR_SOUND_NUMBER::INDICATOR_WAYANG_HAND_CALIBRATION);
         delay(3500);
@@ -3273,52 +3274,28 @@ void CalibratingFunction::wayangHand()
 {
     setAllMOSFETtoLOW();
 
-    wayangSita.walk_to_a_certain_distance_before_calibrating_value(200);
-    delay(500);
     wayangSita.defaultHandPosition();
-    delay(500);
     wayangSita.defaultStandPosition();
 
-    wayangRahwana.walk_to_a_certain_distance_before_calibrating_value(200);
-    delay(500);
     wayangRahwana.defaultHandPosition();
-    delay(500);
     wayangRahwana.defaultStandPosition();
 
-    wayangRamaWijaya.walk_to_a_certain_distance_before_calibrating_value(200);
-    delay(500);
     wayangRamaWijaya.defaultHandPosition();
-    delay(500);
     wayangRamaWijaya.defaultStandPosition();
 
-    wayangHanoman.walk_to_a_certain_distance_before_calibrating_value(200);
-    delay(500);
     wayangHanoman.defaultHandPosition();
-    delay(500);
     wayangHanoman.defaultStandPosition();
 
-    wayangLaksmana.walk_to_a_certain_distance_before_calibrating_value(200);
-    delay(500);
     wayangLaksmana.defaultHandPosition();
-    delay(500);
     wayangLaksmana.defaultStandPosition();
 
-    wayangSugriwa.walk_to_a_certain_distance_before_calibrating_value(200);
-    delay(500);
-    wayangSugriwa.mathentengA();
-    delay(500);
+    wayangSugriwa.defaultHandPosition();
     wayangSugriwa.defaultStandPosition();
 
-    wayangSubali.walk_to_a_certain_distance_before_calibrating_value(200);
-    delay(500);
-    wayangSubali.mathenthengA();
-    delay(500);
+    wayangSubali.defaultHandPosition();
     wayangSubali.defaultStandPosition();
 
-    wayangWibhisana.walk_to_a_certain_distance_before_calibrating_value(200);
-    delay(500);
     wayangWibhisana.defaultHandPosition();
-    delay(500);
     wayangWibhisana.defaultStandPosition();
 
     setAllMOSFETtoHIGH();
