@@ -161,7 +161,7 @@ void Hanoman::onHipBack()
 {
     digitalWrite(WAYANG_HAND_4, HIGH);
     Servo_Hanuman.moveWhatServo(2, 130, 200);
-    Servo_Hanuman.moveWhatServo(1, 80, 500);
+    Servo_Hanuman.moveWhatServo(1, 30, 500);
     Servo_Hanuman.moveWhatServo(2, 100, 200);
     digitalWrite(WAYANG_HAND_4, LOW);
 }
@@ -170,7 +170,7 @@ void Hanoman::onHipBack()
 void Hanoman::pointToSelf()
 {
     digitalWrite(WAYANG_HAND_4, HIGH);
-    Servo_Hanuman.moveWhatServo(4, 60, 200);
+    Servo_Hanuman.moveWhatServo(4, 40, 200);
     Servo_Hanuman.moveWhatServo(3, 150, 500);
     Servo_Hanuman.moveWhatServo(4, 80, 200);
     digitalWrite(WAYANG_HAND_4, LOW);

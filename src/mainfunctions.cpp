@@ -707,8 +707,8 @@ void WayangDisplay::generalLoop()
             wayangRamaWijaya.defaultStandPosition();
             setAllMOSFETtoHIGH();
             pageRoute = StateManagement::PAGE_ROUTE::WAYANG_HAND_CALIBRATION_PAGE;
-            subPageRoute = StateManagement::WAYANG_HAND_CALIBRATION_SUB_PAGE_ROUTE::WAYANG_HAND_CALIBRATION_1;
-            WayangDisplayLCD_in_main.set_selection_point(4);
+            subPageRoute = StateManagement::WAYANG_HAND_CALIBRATION_SUB_PAGE_ROUTE::WAYANG_HAND_CALIBRATION_2;
+            WayangDisplayLCD_in_main.set_selection_point(3);
             loop_state = StateManagement::FSA_STATE::DEFAULT_LOOPING_LCD;
             delay(1);
             break;
@@ -802,8 +802,8 @@ void WayangDisplay::generalLoop()
             wayangHanoman.defaultStandPosition();
             setAllMOSFETtoHIGH();
             pageRoute = StateManagement::PAGE_ROUTE::WAYANG_HAND_CALIBRATION_PAGE;
-            subPageRoute = StateManagement::WAYANG_HAND_CALIBRATION_SUB_PAGE_ROUTE::WAYANG_HAND_CALIBRATION_1;
-            WayangDisplayLCD_in_main.set_selection_point(5);
+            subPageRoute = StateManagement::WAYANG_HAND_CALIBRATION_SUB_PAGE_ROUTE::WAYANG_HAND_CALIBRATION_3;
+            WayangDisplayLCD_in_main.set_selection_point(3);
             loop_state = StateManagement::FSA_STATE::DEFAULT_LOOPING_LCD;
             delay(1);
             break;
@@ -897,8 +897,8 @@ void WayangDisplay::generalLoop()
             wayangLaksmana.defaultStandPosition();
             setAllMOSFETtoHIGH();
             pageRoute = StateManagement::PAGE_ROUTE::WAYANG_HAND_CALIBRATION_PAGE;
-            subPageRoute = StateManagement::WAYANG_HAND_CALIBRATION_SUB_PAGE_ROUTE::WAYANG_HAND_CALIBRATION_1;
-            WayangDisplayLCD_in_main.set_selection_point(6);
+            subPageRoute = StateManagement::WAYANG_HAND_CALIBRATION_SUB_PAGE_ROUTE::WAYANG_HAND_CALIBRATION_4;
+            WayangDisplayLCD_in_main.set_selection_point(3);
             loop_state = StateManagement::FSA_STATE::DEFAULT_LOOPING_LCD;
             delay(1);
             break;
@@ -992,8 +992,8 @@ void WayangDisplay::generalLoop()
             wayangSugriwa.defaultStandPosition();
             setAllMOSFETtoHIGH();
             pageRoute = StateManagement::PAGE_ROUTE::WAYANG_HAND_CALIBRATION_PAGE;
-            subPageRoute = StateManagement::WAYANG_HAND_CALIBRATION_SUB_PAGE_ROUTE::WAYANG_HAND_CALIBRATION_1;
-            WayangDisplayLCD_in_main.set_selection_point(7);
+            subPageRoute = StateManagement::WAYANG_HAND_CALIBRATION_SUB_PAGE_ROUTE::WAYANG_HAND_CALIBRATION_5;
+            WayangDisplayLCD_in_main.set_selection_point(3);
             loop_state = StateManagement::FSA_STATE::DEFAULT_LOOPING_LCD;
             delay(1);
             break;
@@ -1087,8 +1087,8 @@ void WayangDisplay::generalLoop()
             wayangSubali.defaultStandPosition();
             setAllMOSFETtoHIGH();
             pageRoute = StateManagement::PAGE_ROUTE::WAYANG_HAND_CALIBRATION_PAGE;
-            subPageRoute = StateManagement::WAYANG_HAND_CALIBRATION_SUB_PAGE_ROUTE::WAYANG_HAND_CALIBRATION_1;
-            WayangDisplayLCD_in_main.set_selection_point(8);
+            subPageRoute = StateManagement::WAYANG_HAND_CALIBRATION_SUB_PAGE_ROUTE::WAYANG_HAND_CALIBRATION_6;
+            WayangDisplayLCD_in_main.set_selection_point(3);
             loop_state = StateManagement::FSA_STATE::DEFAULT_LOOPING_LCD;
             delay(1);
             break;
@@ -1182,8 +1182,8 @@ void WayangDisplay::generalLoop()
             wayangWibhisana.defaultStandPosition();
             setAllMOSFETtoHIGH();
             pageRoute = StateManagement::PAGE_ROUTE::WAYANG_HAND_CALIBRATION_PAGE;
-            subPageRoute = StateManagement::WAYANG_HAND_CALIBRATION_SUB_PAGE_ROUTE::WAYANG_HAND_CALIBRATION_1;
-            WayangDisplayLCD_in_main.set_selection_point(9);
+            subPageRoute = StateManagement::WAYANG_HAND_CALIBRATION_SUB_PAGE_ROUTE::WAYANG_HAND_CALIBRATION_7;
+            WayangDisplayLCD_in_main.set_selection_point(3);
             loop_state = StateManagement::FSA_STATE::DEFAULT_LOOPING_LCD;
             delay(1);
             break;
@@ -1277,8 +1277,8 @@ void WayangDisplay::generalLoop()
             wayangAnggada.defaultStandPosition();
             setAllMOSFETtoHIGH();
             pageRoute = StateManagement::PAGE_ROUTE::WAYANG_HAND_CALIBRATION_PAGE;
-            subPageRoute = StateManagement::WAYANG_HAND_CALIBRATION_SUB_PAGE_ROUTE::WAYANG_HAND_CALIBRATION_1;
-            WayangDisplayLCD_in_main.set_selection_point(10);
+            subPageRoute = StateManagement::WAYANG_HAND_CALIBRATION_SUB_PAGE_ROUTE::WAYANG_HAND_CALIBRATION_8;
+            WayangDisplayLCD_in_main.set_selection_point(3);
             loop_state = StateManagement::FSA_STATE::DEFAULT_LOOPING_LCD;
             delay(1);
             break;
@@ -1372,8 +1372,8 @@ void WayangDisplay::generalLoop()
             wayangAnila.defaultStandPosition();
             setAllMOSFETtoHIGH();
             pageRoute = StateManagement::PAGE_ROUTE::WAYANG_HAND_CALIBRATION_PAGE;
-            subPageRoute = StateManagement::WAYANG_HAND_CALIBRATION_SUB_PAGE_ROUTE::WAYANG_HAND_CALIBRATION_1;
-            WayangDisplayLCD_in_main.set_selection_point(11);
+            subPageRoute = StateManagement::WAYANG_HAND_CALIBRATION_SUB_PAGE_ROUTE::WAYANG_HAND_CALIBRATION_9;
+            WayangDisplayLCD_in_main.set_selection_point(3);
             loop_state = StateManagement::FSA_STATE::DEFAULT_LOOPING_LCD;
             delay(1);
             break;

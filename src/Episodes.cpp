@@ -120,7 +120,8 @@ static void sugriwaTaskFight1(void *pvParameters)
 {
     while (1)
     {
-        Serial.println("Running sugriwaTaskFight1: " + String(uxTaskGetStackHighWaterMark(NULL)));
+        Serial.print(F("Running sugriwaTaskFight1: "));
+        Serial.println(uxTaskGetStackHighWaterMark(NULL));
         sugriwa.pointToFront();       // takes 900 ms
         sugriwa.lower_pointToFront(); // takes 700 ms
         sugriwa.downFront();          // takes 700 ms
@@ -138,7 +139,8 @@ static void subaliTaskFight1(void *pvParameters)
     // vTaskSuspend(mainLoopTaskHandler);
     while (1)
     {
-        Serial.println("Running subaliTaskFight1: " + String(uxTaskGetStackHighWaterMark(NULL)));
+        Serial.print(F("Running subaliTaskFight1: "));
+        Serial.println(uxTaskGetStackHighWaterMark(NULL));
         subali.pointToFront();       // takes 900 ms
         subali.lower_pointToFront(); // takes 700 ms
         subali.downFront();          // takes 700 ms
@@ -154,7 +156,8 @@ static void subaliTaskFight2(void *pvParameters)
 {
     while (1)
     {
-        Serial.println("Running subaliTaskFight2: " + String(uxTaskGetStackHighWaterMark(NULL)));
+        Serial.print(F("Running subaliTaskFight2: "));
+        Serial.println(uxTaskGetStackHighWaterMark(NULL));
         subali.pointToFront();       // takes 900 ms
         subali.lower_pointToFront(); // takes 700 ms
         subali.downFront();          // takes 700 ms
@@ -169,7 +172,8 @@ static void ramaTaskFight1(void *pvParameters)
 {
     while (1)
     {
-        Serial.println("Running ramaTaskFight1 : " + String(uxTaskGetStackHighWaterMark(NULL)));
+        Serial.print(F("Running ramaTaskFight1 : "));
+        Serial.println(uxTaskGetStackHighWaterMark(NULL));
         rama_wijaya.pointToFront();       // takes 900 ms
         rama_wijaya.lower_pointToFront(); // takes 700 ms
         rama_wijaya.downFront();          // takes 700 ms
@@ -1827,7 +1831,8 @@ void Episodes::Episode_2()
     // 015 (Subali round 1 rage)
     SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_1, SoundSystem::EPISODE_1_DIALOG::SUBALI_ROUND_1_RAGE);
     // delay(3000);
-    Serial.println("Current stack size: " + String(uxTaskGetStackHighWaterMark(NULL)));
+    Serial.print(F("Current stack size: "));
+    Serial.println(uxTaskGetStackHighWaterMark(NULL));
     // (717) you DARE challenge me? (2349) [Front point to front]
     delay(717);
     subali.pointToFront(); // takes 900 ms
@@ -1846,7 +1851,8 @@ void Episodes::Episode_2()
     SoundSystem::playMusicWayang();
     subali.walk_to_a_certain_distance_before_calibrating_value(170);
 
-    Serial.println("Current stack size: " + String(uxTaskGetStackHighWaterMark(NULL)));
+    Serial.print(F("Current stack size: "));
+    Serial.println(uxTaskGetStackHighWaterMark(NULL));
 
     xTaskCreate(sugriwaTaskFight1, "sugriwaTaskFight1", fighting_STACK_SIZE, NULL, 1, NULL);
     xTaskCreate(subaliTaskFight1, "subaliTaskFight1", fighting_STACK_SIZE, NULL, 1, NULL);
@@ -3692,6 +3698,7 @@ void Episodes::Episode_3()
     rahwana.downFront(); // takes 700 ms
 
     // *Leaves from scene*
+    SoundSystem::playMusicWayang();
     rahwana.defaultStandPosition();
 
     /*005_Sita-Rahwana-Hanuman_Sita2*/
@@ -3775,10 +3782,10 @@ void Episodes::Episode_3()
     sita.downFront(); // takes 700 ms
 
     /*006_Sita-Rawana-Hanuman_Hanuman1*/
-    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::SITA_RAHWANA_HANUMAN_HANUMAN1);
-
+    SoundSystem::playMusicWayang();
     hanoman.walk_to_a_certain_distance_before_calibrating_value(200);
     // play audio here
+    SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::SITA_RAHWANA_HANUMAN_HANUMAN1);
 
     delay(1198);
     // (1198) Hail to thee, O princess! (3100)
@@ -3903,11 +3910,13 @@ void Episodes::Episode_3()
     delay(73290 - 69475 - 1200);
 
     // pause audio here to show the ring closer
+    SoundSystem::pause();
     hanoman.walk_to_a_certain_distance_before_calibrating_value(140);
     delay(1000);
     hanoman.walk_to_a_certain_distance_before_calibrating_value(160);
 
     // continue audio here
+    SoundSystem::continuePlaying();
     delay(74180 - 73290);
 
     // (74180) You should also know that your younger brother, (76570)
@@ -4062,6 +4071,8 @@ void Episodes::Episode_3()
     hanoman.downBack();  // takes 700 ms
 
     // *Sita leaves from scene*
+    SoundSystem::playMusicWayang();
+    sita.defaultStandPosition();
 
     /*008p5_Sita-Rawana-Hanuman_Hanuman3*/
     SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::SITA_RAHWANA_HANUMAN_HANUMAN3);
@@ -4073,14 +4084,17 @@ void Episodes::Episode_3()
     hanoman.directControl(3, 180, 300);
     hanoman.directControl(4, 140, 200);
     delay(4209 - 1892 - 300 - 200);
+
+    SoundSystem::playMusicWayang();
     hanoman.mathenthengC();
     hanoman.defaultStandPosition();
     hanoman.defaultHandPosition();
-    delay(2000);
+    delay(1000);
 
     /*009_Hanuman-Rawana-Wibhisana_HanumanEnter*/ // Gak usah dimainin (konteksny beda karna hanuman 'obedient')
     hanoman.walk_to_a_certain_distance_before_calibrating_value(160);
     // (555) Agh! (933)
+    rahwana.walk_to_a_certain_distance_before_calibrating_value(250);
 
     /*010_Hanuman-Rawana-Wibhisana_Rawana1v*/
     SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::HANUMAN_RAHWANA_WIBHISANA_RAHWANA1);
@@ -4117,6 +4131,9 @@ void Episodes::Episode_3()
     delay(11986 - 10811 - (700 - (10811 - 10415)) - 200 - 500);
     delay(2000);
     rahwana.downFront(); // takes 700 ms
+
+    SoundSystem::playMusicWayang();
+    wibhisana.walk_to_a_certain_distance_before_calibrating_value(250);
 
     /*011_Hanuman-Rawana-Wibhisana_Wibhisana1*/
     SoundSystem::playDialogFromACertainFolder(SoundSystem::EPISODE_NUMBER::EPISODE_3, SoundSystem::EPISODE_3_DIALOG::HANUMAN_RAHWANA_WIBHISANA_WIBHISANA1);
@@ -4947,6 +4964,7 @@ void Episodes::Episode_3()
     // g ad delay, main lgsg
     // (318) *roar* (1665)
     hanoman.mathenthengC();
+    SoundSystem::playMusicWayang();
 
     // *Hanuman escapes*
     hanoman.defaultStandPosition();

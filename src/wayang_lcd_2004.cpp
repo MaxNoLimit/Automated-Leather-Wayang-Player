@@ -240,6 +240,8 @@ void WayangDisplay::WayangDisplayLCD::SettingsDisplay()
     lcdWayang.print(F("Volume:"));
     lcdWayang.setCursor(8, 1);
     lcdWayang.print(volumeHardcoded);
+    lcdWayang.setCursor(0, 3);
+    lcdWayang.print(F("Force Stop: X"));
     lcdWayang.setCursor(18, get_selection_point());
     lcdWayang.print(F("<<"));
 }
